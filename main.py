@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 import pymysql
 import os
 
+# Uncomment for Vercel Development
 connection = pymysql.connect(
     host=os.environ.get('host'),
     database=os.environ.get('database'),
@@ -10,12 +11,19 @@ connection = pymysql.connect(
     ssl_ca="cacert.pem"
 )
 
+# Uncomment for Local Development
+# connection = pymysql.connect(
+#     host='aws.connect.psdb.cloud',
+#     database='test-database',
+#     user='',
+#     password='',
+#     ssl_ca="cacert.pem"
+# )
+
 app = FastAPI()
 
 @app.post("/walls",status_code=201)
 async def add_wall(id: int, name: str, length: float, volume: float):
-    # Calculate the volume of the wall
-
     # Execute an INSERT query to add the wall to the database
     with connection.cursor() as cursor:
         cursor.execute("INSERT INTO walls (id, name, length, volume) VALUES (%s, %s, %s, %s)", (id, name, length, volume))
