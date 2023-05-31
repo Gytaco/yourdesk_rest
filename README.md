@@ -7,6 +7,8 @@ This is based on Windows users using Visual Studio Code
 
 # Initial Things
 Sign up to Vercel & PlanetScale <br>
+Vercel https://vercel.com/ <br>
+PlanetScale https://planetscale.com/ <br>
 Clone the Repo
 
 # Setup Environment from scratch
