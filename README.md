@@ -12,6 +12,8 @@ Sign up to Vercel & PlanetScale <br>
 Vercel https://vercel.com/ <br>
 PlanetScale https://planetscale.com/ <br>
 Clone the Repo
+In Vercel import your cloned repo into a new project.
+In Planetscale create a connection string, get the details and create a .env file and add credentials
 
 # Setup Environment from scratch
 To create the environment, dont clone the repo. <br>
@@ -44,3 +46,5 @@ uvicorn main:app --reload
 # Notes
 I have included an excel file and dynamo DynaWeb script so you can see some examples of how this works.
 Please make sure you update the URLs of the queries with your own.
+Add Authentication the easiest one is Auth0 https://auth0.com/ <br>
+https://auth0.com/blog/build-and-secure-fastapi-server-with-auth0/
