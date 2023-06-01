@@ -3,6 +3,8 @@ import pymysql
 import os
 
 # Uncomment for Vercel Development
+# rename example.env file to .env and update 
+# with planetscale credentials and on vercel aswell
 connection = pymysql.connect(
     host=os.environ.get('host'),
     database=os.environ.get('database'),
@@ -12,9 +14,11 @@ connection = pymysql.connect(
 )
 
 # Uncomment for Local Development
+# Only for use with local uvicorn hot reloading
+# uvicorn main:app --reload
 # connection = pymysql.connect(
 #     host='aws.connect.psdb.cloud',
-#     database='test-database',
+#     database='',
 #     user='',
 #     password='',
 #     ssl_ca="cacert.pem"
