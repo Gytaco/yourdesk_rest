@@ -1,9 +1,10 @@
 # yourdesk_rest
 Your Desk University Setup <br>
 Rest example for Vercel and Planetscape setup <br>
-You can watch the video here https://www.youtube.com/watch?v=3A6w-lKPec8 <br>
 
-This is the dataset for the following Youtube Video on YourDesk University in June 2023. You can find the video here.
+
+This is the dataset for the following Youtube Video on YourDesk University in June 2023.
+You can watch the video here https://www.youtube.com/watch?v=3A6w-lKPec8 <br>
 This is based on Windows users using Visual Studio Code
 
 # Initial Things
